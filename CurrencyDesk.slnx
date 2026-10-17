@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/CurrencyDesk/CurrencyDesk.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/CurrencyDesk.Tests/CurrencyDesk.Tests.csproj" />
+  </Folder>
+</Solution>
