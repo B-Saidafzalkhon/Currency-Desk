@@ -92,3 +92,25 @@ Run the tests:
 ```bash
 dotnet test
 ```
+
+## What I learned
+
+- Working with REST APIs — sending HTTP requests with HttpClient and deserializing JSON responses using System.Text.Json.
+
+- Separation of concerns — keeping input parsing, conversion logic, API communication and console UI in separate classes.
+
+- Error handling — handling network failures, timeouts and unsupported currencies without crashing the application.
+
+- Working with decimal — understanding why it is suitable for monetary calculations and how explicit rounding affects results.
+
+- Unit testing with xUnit — testing parsing and conversion logic independently of HTTP requests and console input.
+
+- Dependency injection — passing HttpClient through a constructor instead of creating it inside the API client.
+
+- Input validation and culture-independent code — accepting decimal numbers with either . or , and formatting dates consistently across cultures.
+
+
+## Kurzbeschreibung (Deutsch)
+Was ich gelernt habe
+
+Bei diesem Projekt habe ich gelernt, wie man mit einer API arbeitet und aktuelle Wechselkurse bekommt. Ich habe auch gelernt, wie man Fehler behandelt und Benutzereingaben prüft. Außerdem habe ich mit Unit-Tests gearbeitet und meinen Code in verschiedene Klassen aufgeteilt.
