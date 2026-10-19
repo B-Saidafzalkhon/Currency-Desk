@@ -1,4 +1,5 @@
 ﻿using CurrencyDesk.Clients;
+using CurrencyDesk.UI;
 
 namespace CurrencyDesk;
 
@@ -15,10 +16,9 @@ internal class Program
         };
         var api = new FrankfurterClient(http);
 
-        var ratesHistory = await api.GetHistoryAsync("USD", "EUR", new DateOnly(2026, 09, 01), new DateOnly(2026, 09, 30), cts.Token);
-        var latestRates = await api.GetLatestRatesAsync("USD", cts.Token);
+        var client = new FrankfurterClient(http);
+        var menu = new ConsoleMenu(client);
 
-        Console.WriteLine(latestRates);
-        Console.WriteLine(ratesHistory);
+        await menu.RunAsync();
     }
 }
